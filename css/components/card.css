@@ -47,7 +47,7 @@ html{
   width: 100%;
   border: 0.3px solid #808080e3;
   border-radius: 8px;
-  box-shadow: 1px 1px 3px #8080805e;
+  box-shadow: 2px 2px 3px #8080805e;
   position: relative;
 }
 
@@ -64,11 +64,18 @@ html{
   display: none;
   border-radius: 8px 8px 0 0;
 }
+.item:hover {
+  animation-name:pulse;
+  animation-duration: 0.8s
+}
 .item:hover:after {
   /*opacity: 1;*/
   display: block;
+  /*animation-name:pulse;
+  animation-duration: 0.8s*/
 }
-.item:hover{
+
+.user-info:hover{
   animation-name:pulse;
   animation-duration: 0.8s
 }
@@ -116,6 +123,8 @@ html{
   color: black;
 }
 
-.like:hover{
-  color: black;
+.like:hover i{
+  color: #e67fa0;
+  animation-name:heartBeat;
+  animation-duration: 1.4s
 }
