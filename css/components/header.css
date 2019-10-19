@@ -48,7 +48,7 @@
 /* Masonry on small screens */
 @media only screen and (max-width: 767px) and (min-width: 540px) {
   .header .logo{
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 539px) {
