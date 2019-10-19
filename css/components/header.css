@@ -1,5 +1,8 @@
 
 
+/*.header-placeholder {
+  height: 100px;
+}*/
 .header{
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../../images/header1.jpg);
   height: 100px;
@@ -9,7 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-attachment: fixed;
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;*/
+  /*background-attachment: fixed;*/
 }
 .header .content{
   display: flex;
