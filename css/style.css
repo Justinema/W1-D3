@@ -1,0 +1,22 @@
+
+@import url("components/card.css");
+@import url("components/header.css");
+
+html{
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 20px;
+}
+

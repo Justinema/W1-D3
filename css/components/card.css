@@ -1,0 +1,121 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+.masonry{
+  column-count: 4;
+  column-gap:1em;
+  margin: 10px;
+  max-width: 1.5em auto;
+}
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media only screen and (max-width: 539px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+.product-info{
+  padding: 10px;
+}
+.item{
+  background-color: white;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  border: 0.3px solid #808080e3;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px #8080805e;
+  position: relative;
+}
+
+
+.item:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+  /*opacity: 0;*/
+  display: none;
+  border-radius: 8px 8px 0 0;
+}
+.item:hover:after {
+  /*opacity: 1;*/
+  display: block;
+}
+.item:hover{
+  animation-name:pulse;
+  animation-duration: 0.8s
+}
+
+.product-pic{
+  object-fit:cover;
+  object-position:center;
+  width:100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.user{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+}
+.user-info{
+  /*display: flex;*/
+  align-items: center;
+  width: 70px;
+  position: relative;
+  /*justify-content: space-between;*/
+  padding-left: 30px;
+}
+.user-pic{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+ /* margin: auto;*/
+  position: absolute;
+  top: 6px;
+  left: -20px;
+}
+.like{
+  display: flex;
+  align-items: center;
+  width: 70px;
+  justify-content: space-evenly;
+  color: grey;
+}
+.like p{
+  color: black;
+}
+
+.like:hover{
+  color: black;
+}

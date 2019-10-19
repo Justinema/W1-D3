@@ -1,0 +1,62 @@
+
+
+.header{
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../../images/header1.jpg);
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .content{
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  font-size: 18px;
+}
+.header .content p{
+  transition: 0.3s ease-in-out;
+  padding: 20px;
+}
+
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .header .content p{
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 539px) {
+  .header .content p{
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+.header .content p:hover{
+  color: grey;
+}
+.header .logo{
+  color: white;
+  font-size: 25px;
+  padding-left: 20px;
+  transition: 0.2s ease-in-out;
+}
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .header .logo{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 539px) {
+  .header .logo{
+    font-size: 15px;
+  }
+}
+
+.header .logo:hover{
+  color: #ad76a1;
+}
