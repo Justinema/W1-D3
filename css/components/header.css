@@ -1,22 +1,23 @@
 
 
 /*.header-placeholder {
-  height: 100px;
+  height: 120px;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3))
 }*/
 .header{
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../../images/header1.jpg);
   /*height: 130px;*/
   background-size: cover;
   background-position: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*position: fixed;
+ /* position: fixed;*/
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;*/
+  z-index: 100;
   /*background-attachment: fixed;*/
 }
 .header .content{
@@ -32,8 +33,13 @@
 @media only screen and (min-width: 1024px) {
   .header{
     background-attachment: fixed;
-    height: 130px;
+    height: 120px;
+    position: fixed;
   }
+  .header-placeholder {
+  height: 120px;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3))
+}
 
 }
 
@@ -41,8 +47,13 @@
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .header{
     background-attachment: fixed;
-    height: 130px;
+    height: 120px;
+    position: fixed;
   }
+  .header-placeholder {
+  height: 120px;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3))
+}
 }
 
 /* Masonry on small screens */
